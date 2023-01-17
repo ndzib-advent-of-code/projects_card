@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet">   
+ <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-[#91D0EF] flex justify-center items-center min-h-screen">
+    <div class="flex flex-col items-center">
+        <div class="card section-1">
+            <img class="avatar" src="https://i.postimg.cc/c12v4Nr2/download-2.jpg" alt="John Hawkins">
+            <h2 class="name">John Hawkings</h2>
+            <a  class="role" href="#">UI/UX Designer</a>
+            <p class="bio">
+                Mauris ac quam quisque, donec ac, praesent in hymbeaeos wisi.
+            </p>
+        </div>
+
+        <div class="card section-2">
+            <h2 class="title">Projects</h2>
+            <div class="plot">
+                <canvas id="graph"></canvas>
+                <div class="graph-label">
+                    <p class="graph-total-value">314</p>
+                    <p class="graph-total-label light-text">Total</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3 class="stat-value">167</h3>
+                    <p class="stat-title light-text">Completed</p>
+                    <iconify-icon class="stat-color cyan-text" icon="carbon:dot-mark"></iconify-icon>
+                </div>
+
+                <div class="stat">
+                    <h3 class="stat-value">24</h3>
+                    <p class="stat-title light-text">Overdue</p>
+                    <iconify-icon class="orange-text stat-color" icon="carbon:dot-mark"></iconify-icon>
+                </div>
+
+                <div class="stat">
+                    <h3 class="stat-value">123</h3>
+                    <p class="stat-title light-text">In Progress</p>
+                    <iconify-icon class="blue-text stat-color" icon="carbon:dot-mark"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
